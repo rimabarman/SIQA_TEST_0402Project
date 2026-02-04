@@ -9,17 +9,19 @@
   <null name="startup_services"/>
   <null name="shutdown_services"/>
   <null name="replication_services"/>
-  <null name="requires"/>
+  <record name="requires" javaclass="com.wm.util.Values">
+    <value name="TPP_services_in_FCS">1.0</value>
+  </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">4</value>
+  <value name="build">5</value>
   <null name="description"/>
   <value name="created_date">04-02-2026 04:56:54 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-02-04T04:57:17.055493572Z</value>
+  <value name="lastUpdated">2026-02-04T04:57:48.955787668Z</value>
   <value name="wmProjectId">fle8bca153a07241c895b84aeba5fd7503</value>
   <value name="creator">Rima.Barman </value>
 </Values>

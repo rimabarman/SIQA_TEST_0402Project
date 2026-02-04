@@ -7,6 +7,11 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+- name: TPP_services_in_FCS
+  gitServerName: rimaSCName
+  gitUrl: https://github.com/Karthik-V-IBM-10
+  gitUsername: rimabarman
+  gitBranch: main
 services:
 - serviceName: project.siqa_test_0402.integrations:deepclonetest
   packages:
@@ -27,19 +32,19 @@ services:
 configurationVariables:
   jdbc.Embedded-Database-Pool.waitingThread: "0"
   jdbcfunc.ISDashboardStats.failFastMode: false
+  jdbcfunc.ISInternal.failFastMode: true
+  jdbc.Embedded-Database-Pool.maxConns: "10"
   jdbc.Embedded-Database-Pool.spyenabled: "false"
   jdbcfunc.Xref.failFastMode: true
   jdbcfunc.ISDashboardStats.connPoolAlias: Embedded-Database-Pool
-  jdbcfunc.Xref.connPoolAlias: Embedded-Database-Pool
-  jdbc.Embedded-Database-Pool.userid: APP
-  jdbcfunc.ISInternal.connPoolAlias: Embedded-Database-Pool
-  jdbc.Embedded-Database-Pool.password: "{AES}Zcw2EXTJgNDVmVzJO2Y3Bw=="
-  jdbc.Embedded-Database-Pool.snoopenabled: "false"
-  jdbcfunc.ISInternal.failFastMode: true
-  jdbc.Embedded-Database-Pool.maxConns: "10"
   jdbc.Embedded-Database-Pool.expireTime: "60000"
   jdbc.Embedded-Database-Pool.poolThreshold: "0"
+  jdbcfunc.Xref.connPoolAlias: Embedded-Database-Pool
+  jdbc.Embedded-Database-Pool.userid: APP
   jdbc.Embedded-Database-Pool.useSSL: "false"
+  jdbcfunc.ISInternal.connPoolAlias: Embedded-Database-Pool
+  jdbc.Embedded-Database-Pool.password: "{AES}Zcw2EXTJgNDVmVzJO2Y3Bw=="
   jdbc.Embedded-Database-Pool.minConns: "0"
   jdbc.Embedded-Database-Pool.driverAlias: Embedded Database Driver
   jdbc.Embedded-Database-Pool.dbURL: jdbc:derby:embedded;create=true
+  jdbc.Embedded-Database-Pool.snoopenabled: "false"
