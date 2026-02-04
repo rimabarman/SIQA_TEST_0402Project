@@ -8,3 +8,8 @@ runtimes:
     uid: fl79c360d6214d475bbe0aa779160e484c
     stepId: a0
     reference: project.siqa_test_0402.integrations:deepclonetest
+  - name: Call_TPPService
+    type: workflow
+    uid: fl1d0e6b61adb84842939679b33a5adc3d
+    stepId: a0
+    reference: services:add3Ints
