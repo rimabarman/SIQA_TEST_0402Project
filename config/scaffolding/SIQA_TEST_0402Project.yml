@@ -7,6 +7,23 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+services:
+- serviceName: project.siqa_test_0402.integrations:deepclonetest
+  packages:
+  - name: SIQA_TEST_0402Project
+    version: "1.0"
+- serviceName: pub.string:stringToBytes
+  packages:
+  - name: WmPublic
+    version: 12.0.0.0.743
+- serviceName: pub.utils:deepClone
+  packages:
+  - name: WmPublic
+    version: 12.0.0.0.743
+- serviceName: pub.string:bytesToString
+  packages:
+  - name: WmPublic
+    version: 12.0.0.0.743
 configurationVariables:
   jdbc.Embedded-Database-Pool.waitingThread: "0"
   jdbcfunc.ISDashboardStats.failFastMode: false
